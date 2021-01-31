@@ -1,0 +1,6 @@
+setwd("~/Documents/Class_data/MechaCar_Statistical_Analysis")
+library(dplyr)
+MechaCar_mpg <- read.csv(file ='MechaCar_mpg.csv')
+head(MechaCar_mpg)
+lm(mpg~ vehicle_length + spoiler_angle + vehicle_weight + ground_clearance + AWD, data=MechaCar_mpg)
+summary(mpg~ vehicle_length + spoiler_angle + vehicle_weight + ground_clearance + AWD, data=MechaCar_mpg)
